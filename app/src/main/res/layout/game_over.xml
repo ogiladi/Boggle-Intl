@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray">
+
+        <TextView
+            android:id="@+id/successTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/successMessage"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/successSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/successTitle"
+            android:layout_margin="@dimen/marginHalf"
+            android:textAlignment="center"
+            android:text="@string/foundWordsMessage"
+            android:textSize="@dimen/subTitleSize"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/newGameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/buttonPadding"
+            android:layout_margin="@dimen/marginHalf"
+            android:layout_below="@id/successSubTitle"
+            android:text="@string/startNewGame"
+            android:textSize="@dimen/buttonTextSize"
+            android:textColor="@color/colorOffWhite"
+            android:background="@color/colorLightBlue"/>
+
+        <Button
+            android:id="@+id/backToMainMenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/buttonPadding"
+            android:layout_margin="@dimen/marginHalf"
+            android:layout_below="@id/newGameButton"
+            android:text="@string/backToMainMenu"
+            android:textSize="@dimen/buttonTextSize"
+            android:textColor="@color/colorOffWhite"
+            android:background="@color/colorLightBlue"/>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

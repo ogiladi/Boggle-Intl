@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Boggle</string>
+
+    <!--MainActivity strings-->
+    <string name="gameActivityTitle">Boggle Intl. \u2014 %s</string>
+    <string name="gameTitle">Boggle Intl.</string>
+    <string name="gameSubTitle">Choose Board Language</string>
+    <string name="boardLoadingTitle">Please wait</string>
+    <string name="boardLoadingSubTitle">Board is loading</string>
+
+    <string name="chooseEnglish">English (CA)</string>
+    <string name="chooseFrench">French</string>
+    <string name="chooseSpanish">Spanish</string>
+
+    <!--GameActivity strings -->
+    <string name="currentScore">Score: %d / %d</string>
+    <string name="currentWord">Current Word: %s</string>
+    <string name="mustAdjacent">You must choose a letter adjacent to the last chosen letter</string>
+    <string name="removeLast">You may remove the last letter only</string>
+    <string name="moreOptionsButton">Options Menu</string>
+
+    <!--Word found strings-->
+    <string name="foundNewWord">\"%s\" is indeed a word\n\n</string>
+    <string name="foundOldWord">This word has already been found</string>
+    <string name="gainOnePt">You gained 1 point</string>
+    <string name="gainMultiPts">You gained %d points</string>
+
+    <!--Success screen strings-->
+    <string name="successMessage">Success!</string>
+    <string name="foundWordsMessage">You found all board words</string>
+    <string name="backToMainMenu">Go to Main Menu</string>
+    <string name="startNewGame">Start a New Game</string>
+
+    <!--Options layout strings-->
+    <string name="recallBoggleRules">"Recall Boggle Rules"</string>
+    <string name="revealBoardWords">All Board Words</string>
+    <string name="revealUnfoundWords">Undiscovered Words</string>
+    <string name="backToGame">"Back to Game"</string>
+
+    <!--Info layout strings-->
+    <string name="githubCode">Full Code on Github</string>
+    <string name="myWebsite">Developer\'s Website</string>
+    <string name="backToPrev">Go Back</string>
+    <string name="githubUrl">https://github.com/ogiladi</string>
+    <string name="myWebsiteUrl">http://www.ohadgiladi.com</string>
+
+    <!--Rules layout strings-->
+    <string name="boggleRulesContent">The purpose is to find all the words hiding in the board.
+        The points are calculated according to the number of letters in the words: 1-2 letters:
+        0 pts; 3-4 letters: 1 pt; 5 letters: 2 pts; 6 letters: 3 pts; 7 letters: 4 pts; 8 or more
+        letters: 11 pts.</string>
+    <string name="boggleRulesAccents">In case a language has accents, the player should choose the
+        same letter without accents. Also, the same set of letters may represent more than one
+        word. For example, in French one may choose M-A-I-S twice since this combination
+        represents the word \"Mais\", as well as the word \"Maïs\".</string>
+
+    <!--Menubar strings-->
+    <string name="aboutApp">About This App</string>
+    <string name="aboutBackground">About The Background Picture</string>
+    <string name="moreAboutBoggle">"More about Boggle"</string>
+    <string name="aboutBackgroundUrl">"https://www.freepik.com/free-vector" +
+                    "/sketch-hand-drawn-doodle-colored-alphabet-letters-seamless" +
+                    "-pattern-vector-illustration_1158832.htm#term=alphabet&amp;page=" +
+                    "2&amp;position=39"</string>
+    <string name="moreAboutBoggleUrl">https://en.wikipedia.org/wiki/Boggle</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9">
+
+    <RelativeLayout
+        android:id="@+id/optionsMenuLayout"
+        android:padding="@dimen/paddingTextBox"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/recallRulesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginHalf"
+            android:background="@color/colorLightBlue"
+            android:padding="@dimen/buttonPadding"
+            android:text="@string/recallBoggleRules"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/buttonTextSize" />
+
+        <Button
+            android:id="@+id/revealBoardWordsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginHalf"
+            android:layout_below="@+id/recallRulesButton"
+            android:background="@color/colorLightBlue"
+            android:padding="@dimen/buttonPadding"
+            android:text="@string/revealBoardWords"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/buttonTextSize" />
+
+        <Button
+            android:id="@+id/revealUnfoundWordsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginHalf"
+            android:layout_below="@+id/revealBoardWordsButton"
+            android:background="@color/colorLightBlue"
+            android:padding="@dimen/buttonPadding"
+            android:text="@string/revealUnfoundWords"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/buttonTextSize" />
+
+
+        <Button
+            android:id="@+id/newGameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginHalf"
+            android:layout_below="@+id/revealUnfoundWordsButton"
+            android:background="@color/colorLightBlue"
+            android:padding="@dimen/buttonPadding"
+            android:text="@string/startNewGame"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/buttonTextSize" />
+
+        <Button
+            android:id="@+id/backToMainMenuButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginHalf"
+            android:layout_below="@+id/newGameButton"
+            android:background="@color/colorLightBlue"
+            android:padding="@dimen/buttonPadding"
+            android:text="@string/backToMainMenu"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/buttonTextSize" />
+
+        <Button
+            android:id="@+id/backToGameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginHalf"
+            android:layout_below="@+id/backToMainMenuButton"
+            android:background="@color/colorLightBlue"
+            android:padding="@dimen/buttonPadding"
+            android:text="@string/backToGame"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/buttonTextSize" />
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.og.boggle.MainActivity">
+    <item
+        android:id="@+id/aboutApp"
+        android:orderInCategory="100"
+        android:title="@string/aboutApp"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/aboutBackground"
+        android:orderInCategory="100"
+        android:title="@string/aboutBackground"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/aboutBoggle"
+        android:orderInCategory="100"
+        android:title="@string/moreAboutBoggle"
+        app:showAsAction="never" />
+</menu>

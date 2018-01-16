@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorLightGray">
+
+            <TextView
+                android:id="@+id/revealWordsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/paddingTextBox"
+                android:textAlignment="center"
+                android:textSize="@dimen/largerTextSize"/>
+
+            <Button
+                android:id="@+id/backToGameButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/buttonPadding"
+                android:layout_margin="@dimen/marginHalf"
+                android:layout_below="@id/revealWordsContent"
+                android:text="@string/backToGame"
+                android:textSize="@dimen/buttonTextSize"
+                android:textColor="@color/colorOffWhite"
+                android:background="@color/colorLightBlue"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

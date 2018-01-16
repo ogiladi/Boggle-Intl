@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.og.boggle.InfoActivity"
+    tools:showIn="@layout/activity_info">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/optionsLayout">
+
+        <RelativeLayout
+            android:id="@+id/infoMenuLayout"
+            android:layout_width="@dimen/buttonWidth"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:id="@+id/githubCodeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/buttonPadding"
+                android:background="@color/colorLightBlue"
+                android:textSize="@dimen/buttonTextSize"
+                android:text="@string/githubCode"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/websiteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/buttonPadding"
+                android:layout_below="@+id/githubCodeButton"
+                android:layout_marginTop="@dimen/marginFull"
+                android:background="@color/colorLightBlue"
+                android:textSize="@dimen/buttonTextSize"
+                android:text="@string/myWebsite"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/backToMainMenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/buttonPadding"
+                android:layout_below="@+id/websiteButton"
+                android:layout_marginTop="@dimen/marginFull"
+                android:background="@color/colorLightBlue"
+                android:textSize="@dimen/buttonTextSize"
+                android:text="@string/backToPrev"
+                android:textColor="@android:color/background_light" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.og.boggle.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuLayout">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.9"
+            android:background="@android:color/background_light"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/gameTitle"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/titleSize"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="@string/gameSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/subTitleSize"
+            android:textStyle="normal|bold"
+            android:id="@+id/subTitle"
+            android:textAlignment="center"
+            android:background="@android:color/background_light"
+            android:alpha="0.9"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/title"
+            android:paddingBottom="5dp"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignRight="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_alignEnd="@+id/title"/>
+
+        <Button
+            android:text="@string/chooseEnglish"
+            android:textSize="@dimen/buttonTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/buttonPadding"
+            android:id="@+id/chooseEnglish"
+            android:background="@color/colorLightBlue"
+            android:layout_below="@+id/subTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignRight="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_alignEnd="@+id/title"
+            android:layout_marginTop="@dimen/marginFull"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:text="@string/chooseFrench"
+            android:textSize="@dimen/buttonTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/buttonPadding"
+            android:id="@+id/chooseFrench"
+            android:background="@color/colorLightBlue"
+            android:layout_below="@+id/chooseEnglish"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignRight="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_alignEnd="@+id/title"
+            android:layout_marginTop="@dimen/marginFull"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:text="@string/chooseSpanish"
+            android:textSize="@dimen/buttonTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/buttonPadding"
+            android:id="@+id/chooseSpanish"
+            android:background="@color/colorLightBlue"
+            android:layout_below="@+id/chooseFrench"
+            android:layout_centerHorizontal="true"
+            android:layout_alignLeft="@+id/title"
+            android:layout_alignRight="@+id/title"
+            android:layout_alignStart="@+id/title"
+            android:layout_alignEnd="@+id/title"
+            android:layout_marginTop="@dimen/marginFull"
+            android:textColor="@android:color/background_light" />
+    </RelativeLayout>
+
+</RelativeLayout>

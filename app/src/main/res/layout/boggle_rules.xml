@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLightGray">
+
+        <TextView
+            android:id="@+id/boggleRulesContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boggleRulesContent"
+            android:padding="@dimen/paddingTextBox"
+            android:textAlignment="center"
+            android:textSize="@dimen/smallerTextSize"/>
+
+        <TextView
+            android:id="@+id/boggleRulesAccents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/boggleRulesContent"
+            android:text="@string/boggleRulesAccents"
+            android:padding="@dimen/paddingTextBox"
+            android:textAlignment="center"
+            android:textSize="@dimen/smallerTextSize"/>
+
+        <Button
+            android:id="@+id/backToGameButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/buttonPadding"
+            android:layout_margin="@dimen/marginHalf"
+            android:layout_below="@id/boggleRulesAccents"
+            android:text="@string/backToGame"
+            android:textSize="@dimen/buttonTextSize"
+            android:textColor="@color/colorOffWhite"
+            android:background="@color/colorLightBlue"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
